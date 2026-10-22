@@ -3,7 +3,7 @@ def test_index_page_loads(client):
 
     assert response.status_code == 200
     assert "Listo" in response.get_data(as_text=True)
-    assert "proyecto base de la asignatura" in response.get_data(as_text=True)
+    assert "proyecto de la asignatura" in response.get_data(as_text=True)
 
 
 def test_index_shows_login_links_to_anonymous_users(client):
